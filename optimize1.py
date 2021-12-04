@@ -1,7 +1,7 @@
 import time
 import pygame
 import random
-from multiprocessing import Pool
+from multiprocessing import Process
 
 
 background = pygame.image.load("background.png")
@@ -42,13 +42,3 @@ def read(list):
 
 
 
-if __name__ == "__main__":
-    start =  time.time()
-    pool = Pool()
-    reslut = pool.map(read,4)
-    pool.close()
-    pool.join()
-
-    stop = time.time()
-
-    print(stop-start, "   MP")
