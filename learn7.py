@@ -2,6 +2,7 @@ import time
 lst = [i for i in range(100000)]
 
 
+
 start = time.time()
 for i in lst:
     i + 1

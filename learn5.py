@@ -1,6 +1,3 @@
-import time
-from typing import Deque
-
 duration = 10
 
 def generator(num):

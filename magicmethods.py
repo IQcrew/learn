@@ -13,9 +13,6 @@ class Person:
         print(f"I died {self.age} years old")
     def __call__(self):
         print("lol")
-
-
-
-tobo = Person("Tobo", 18)
-
+    def __eq__(self, __o: object) -> bool:
+        return True  if self.name == __o.name else False
 
